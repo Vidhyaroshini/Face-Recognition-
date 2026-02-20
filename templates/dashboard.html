@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+  <div class="col-lg-3 col-6">
+    <div class="small-box bg-info">
+      <div class="inner">
+        <h3>{{ total_criminals }}</h3>
+        <p>Total Drivers</p>
+      </div>
+      <a href="{{ url_for('criminal_list') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="col-lg-3 col-6">
+    <div class="small-box bg-info">
+      <div class="inner">
+        <h3>Add Member</h3>
+		<p> To Get Member Details</p>
+      </div>
+      <a href="{{ url_for('add_criminal') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+  </div>
+  
+  <div class="col-lg-3 col-6">
+    <div class="small-box bg-info">
+      <div class="inner">
+        <h3>Check Member</h3>
+		<p> To Authenticate</p>
+      </div>
+      <a href="{{ url_for('result') }}" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Member List</h3>
+  </div>
+  <div class="card-body">
+    <table class="table table-bordered">
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Gender</th>
+        <th>Age</th>
+        <th>Vehicle No</th>
+        <th>Actions</th>
+      </tr>
+      {% for c in criminals %}
+      <tr>
+        <td>{{ c.id }}</td>
+        <td>{{ c.name }}</td>
+        <td>{{ c.phone }}</td>
+        <td>{{ c.email }}</td>
+        <td>{{ c.address }}</td>
+        <td>{{ c.gender }}</td>
+        <td>{{ c.age }}</td>
+        <td>{{ c.crime }}</td>
+        <td>
+          <a href="{{ url_for('edit_criminal', id=c.id) }}" class="btn btn-warning btn-sm">Edit</a>
+          <a href="{{ url_for('delete_criminal', id=c.id) }}" class="btn btn-danger btn-sm">Delete</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}

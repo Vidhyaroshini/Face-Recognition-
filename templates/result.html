@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Adaptive Video Restoration</h3>
+  </div>
+  <div class="card-body">
+    <video controls autoplay width="750px">
+  <source src="static/uploads/{{fname}}" type="video/mp4">
+  <source src="static/uploads/{{fname}}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+	
+	
+  </div>
+  <div class="card-body">
+    <video controls autoplay width="750px">
+  <source src="static/uploads/restored.mp4" type="video/mp4">
+  <source src="static/uploads/restored.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<br>
+<a  align="center" class="form-control" href="/result"> Analyse Criminal </a>
+	
+	
+  </div>
+</div>
+{% endblock %}
