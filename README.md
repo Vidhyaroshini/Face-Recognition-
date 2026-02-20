@@ -1,9 +1,9 @@
  FACE RECOGNITION SYSTEM
 
 --------------------------------------------------
-PROJECT DESCRIPTION
+DESCRIPTION
 --------------------------------------------------
-This project is a Criminal Face Recognition System developed using
+This project is a Face Recognition System developed using
 Python, Flask, OpenCV, and Machine Learning. The system detects and
 recognizes criminal faces using a webcam and stores criminal details
 in a database.
@@ -77,4 +77,4 @@ USE CASE
 DEVELOPED BY
 --------------------------------------------------
 Name  : Vidhya Roshini
-Course: B.Tech CSE
+Course: B.Tech CSE | Full Stack Developer + ML 
